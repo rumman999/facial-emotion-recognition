@@ -168,8 +168,8 @@ Thumbs.db
 *.swo
 *~
 
-
-
 data.zip
-data/
-models/
+/data/
+/dataset/
+/models/
+/reports/
