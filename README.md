@@ -2,7 +2,7 @@
 
 A deep learning project to detect and classify human emotions from `48x48` facial images using a Convolutional Neural Network (CNN).
 
-## 🚀 Getting Started
+## Getting Started
 
 If you are cloning this repository from GitHub, follow these steps to get the project running on your local machine.
 
