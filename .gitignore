@@ -167,3 +167,9 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+
+
+data.zip
+data/
+models/
