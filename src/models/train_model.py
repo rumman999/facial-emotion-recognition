@@ -7,7 +7,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from keras.callbacks import EarlyStopping
 
 from config import (
-    TRAIN_PATH, TEST_PATH, MODEL_FILE_NAME, PLOT_FILE_NAME,
+    TRAIN_PATH, VALIDATION_TEST_PATH, MODEL_FILE_NAME, PLOT_FILE_NAME,
     BATCH_SIZE, EPOCHS, LEARNING_RATE, NUM_CLASSES, INPUT_SHAPE
 )
 from data.make_dataset import load_data
@@ -18,7 +18,7 @@ from visualization.visualize import plot_training_history
 def main():
     print("=== 1. Data Loading ===")
     X_train_raw, y_train_raw = load_data(TRAIN_PATH)
-    X_test_raw, y_test_raw = load_data(TEST_PATH)
+    X_test_raw, y_test_raw = load_data(VALIDATION_TEST_PATH)
     
     print("\n=== 2. Feature Preprocessing ===")
     X_train, y_train, X_test, y_test = preprocess_features(

@@ -8,7 +8,8 @@ MODELS_DIR = os.path.join(BASE_DIR, "models")
 
 # Data paths
 TRAIN_PATH = os.path.join(DATA_DIR, "train")
-TEST_PATH = os.path.join(DATA_DIR, "test")
+VALIDATION_TEST_PATH = os.path.join(DATA_DIR, "validation_test")
+CK_TEST_CSV = os.path.join(DATA_DIR, "test", "ckextended.csv")
 
 # Model save path
 MODEL_FILE_NAME = os.path.join(MODELS_DIR, "emotion_model.keras")
